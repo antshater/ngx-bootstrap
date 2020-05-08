@@ -26,7 +26,7 @@ export class Positioning {
     appendToBody?: boolean,
     options?: Options
   ): Data {
-    const chainOfModifiers = [flip, shift, preventOverflow, arrow];
+    const chainOfModifiers = [flip, shift, arrow];
 
     return chainOfModifiers.reduce(
       (modifiedData, modifier) => modifier(modifiedData),
@@ -55,6 +55,7 @@ export function positionElements(
   );
 
   const offsets = getOffsets(data);
+
 
   setStyles(targetElement, {
     'will-change': 'transform',
