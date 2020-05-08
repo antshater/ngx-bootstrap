@@ -6,7 +6,7 @@ import { Renderer2 } from '@angular/core';
 
 import { getOffsets, getReferenceOffsets, updateContainerClass, setStyles } from './utils';
 
-import { arrow, flip, preventOverflow, shift, initData } from './modifiers';
+import { arrow, flip, shift, initData } from './modifiers';
 import { Data, Offsets, Options } from './models';
 
 
